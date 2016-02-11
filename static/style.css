@@ -1,0 +1,91 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Verdana, sans-serif;
+	font-size: 1.2em;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cfe7fa+0,6393c1+100;Grey+Blue+3D */
+	background: rgb(187,211,250);
+
+}
+
+#warning {
+	font-size: 1.5em;
+}
+
+.container {
+	display: none;
+	margin: auto;
+	margin-bottom: 15px;
+	padding: 10px;
+	width: 800px;
+	height: 410px;
+	background: beige;
+	border-radius: 0 0 10px 10px;
+	-webkit-box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container header {
+	padding: 15px;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+.container form {
+	margin: 20px;
+}
+
+.container input:not(#submit), .container select {
+	margin: 10px 10px 10px -10px;
+	width: 70%;
+	height: 1.7rem;
+	font-size: 1em;
+}
+
+.container label {
+	display: inline-block;
+	width: 25%;
+	font-size: 1em;
+}
+
+#submit {
+	margin-top: 10px;
+	margin-left: 10px;
+	display: block;
+	height: 40px;
+	width: 15%;
+	padding: 0;
+	font-size: 1.1em;
+}
+
+span {
+	color: red;
+	font-size: .9em;
+}
+
+p {
+	margin: 25px;
+}
+
+#dupe_warning {
+	display: block;
+	margin-top: 25px;
+	color: red;
+}
+
+h4 {
+	display: block;
+	margin: 30px;
+}
+
+.logos {
+	display: none;
+	background-image: url("/static/logos.png");
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	padding: 0;
+	width: 800px;
+	height: 210px;
+}

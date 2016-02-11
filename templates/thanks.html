@@ -1,0 +1,32 @@
+<DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Extra Credit Info</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		
+		<!--
+		<script src="{{ url_for('static', filename='jquery.validate.min.js') }}"
+			type="text/javascript"></script>
+		-->
+	</head>
+
+	<body>
+		
+		<div class="container">
+			<p>Thanks, {{name}}!</p>
+			<p>Your instructor will be notified shortly. Please close this page.</p>
+		</div>
+
+		<script type="text/javascript" src="{{ url_for('static', filename='main.js') }}" ></script>
+		<script type="text/javascript" >
+			setTimeout( function(){ window.close(); }
+						function(){ self.close() }, 10000);
+		</script>
+
+	</body>
+
+
+</html>

@@ -1,0 +1,36 @@
+<DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Extra Credit Info</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		
+	</head>
+
+	<body>
+		
+		<div class="container">
+			
+			<form id="infoform" action="" method="POST">
+
+				<label for='pw'>Enter Password</label><input type='password' name='pw'>
+				<span id="name_error"></span><br>
+				
+				<input id="submit" type="submit" value="Submit">
+				
+				<span id="dupe_warning">{{ pw_warning }}</span>
+
+			</form>
+			
+		</div>
+		
+		<div id="warning">Please enable JavaScript....</div>
+
+		<script type="text/javascript" src="{{ url_for('static', filename='main.js') }}" ></script>
+
+	</body>
+
+
+</html>
